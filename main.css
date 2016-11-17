@@ -1,0 +1,228 @@
+/**************************************************
+Fonts
+Droid Serif
+Droid Sans
+Droid Sans Mono
+
+Font Scaling
+6.854rem
+4.236rem
+2.618rem
+1.618rem
+1.0rem
+0.618rem
+
+Colour scheme
+
+**************************************************/
+@import 'https://fonts.googleapis.com/css?family=Droid+Sans|Droid+Sans+Mono|Droid+Serif';
+
+*{
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: 'Lato', 'Arial', sans-serif;
+    background-color: #8C8984;
+}
+body {
+    padding: 0;
+    margin: 0;
+    font-size: 0.618rem;
+    line-height: 1.5;
+}
+
+h1{
+    font: bold 4.236rem 'Cormorant Garamond', 'Garamond',  serif;
+    color: white;
+    text-align: center;
+}
+
+h2{
+    font: bold 2.618rem 'Cormorant Garamond','Garamond', serif;
+    clear: both;
+    color: #333230;
+}
+
+li, a{
+    font: bold 1.618rem 'Lato', 'Arial', sans-serif;
+    color: #CCC8C0;    
+}
+
+p{
+    font: bold 1.618rem 'Lato', 'Arial', sans-serif;
+    color: #403E3C;    
+}
+.wrapper{
+    width: 95%;
+    margin: 0 auto;
+}
+header{
+    background-image:url(../images/banner.jpg);
+    background-repeat: repeat    
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+nav{
+    float: left;
+    display: block;
+}
+nav>ul{
+    list-style-type: none;
+    padding: 0;
+}
+nav li{
+    display: inline;
+}
+nav a,
+nav a:link,
+nav a:visited{
+    display: block;
+    font: bold 1.618rem 'Lato', 'Arial',  sans-serif;
+    text-align: center;
+    width: 100%;
+    padding: 1rem;
+    color: #403E3C;
+}
+nav a:active,
+nav a:focus,
+nav a:hover{
+    background-color: #D0B0E4;
+}
+main{
+    width: 100%;
+    padding-top: 10px;
+}
+.col{
+    float: right;
+    width: 80%;
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+    color: #4C4B48;
+}
+
+
+.col img{
+    width: 50%;
+    height: auto;
+    max-width: 100%;
+    background-color: azure;
+    float:left;
+    display: inline-block;
+}
+footer{
+    color: #CCC8C0;
+}
+
+.footer ul {
+
+    color: #CCC8C0;
+}
+
+.footer li {
+    display: inline;
+
+}
+
+.footer a:hover {
+    background-color: #D0B0E4;
+}
+
+@media screen and (min-width: 800px) {
+    /*
+    Set the prescribed widths for listed elements below:
+    header - 100%
+    nav - 90%
+    links - 20% of nav
+    main - 90%
+    columns - 50% of main
+    column image - 50% of column
+    footer - 100% */
+    header {
+        width: 100%;
+    }
+    nav {
+        width: 90%;
+        margin: 0 auto;
+    }
+    nav li {
+        width: 20%;
+        float: left;
+        border: none;
+    }
+    nav li a {
+        display: block;
+        text-align: center;
+        text-decoration: none;
+    }
+    nav ul {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    .link a,
+    .link a:link,
+    .link a:visited {
+        font: bold 1.373rem 'Oswald', 'Droid Sans', 'more font stack stuff', sans-serif;
+        background-color: transparent;
+        color: black;
+        text-align: left;
+        padding-left: 0;
+        display: inline-block;
+    }
+    nav a:hover {
+        text-decoration: underline;
+    }
+    main {
+        width: 90%;
+        margin: 0 auto;
+    }
+    main .col {
+        float: left;
+        width: 50%;
+    }
+    .col img {
+        max-width: 100%;
+        float: left;
+        margin: 0 1rem 1rem 0;
+    }
+    footer {
+        width: 100%;
+        clear: both;
+    }
+}
+
+/* -- THIRD BREAK POINT - LARGE DESKTOP VIEW -- */
+
+@media screen and (min-width: 1200px) {
+    header {
+        width: 100%;
+    }
+    main {
+        width: 70%;
+        float: left;
+    }
+    nav {
+        width: 30%;
+        float: left;
+    }
+    .wrapper {
+        width: 75%;
+        max-width: 100rem;
+        margin: 0 auto;
+    }
+    .mainnav .link {
+        float: none;
+        display: block;
+        margin: 0;
+    }
+    .col img {
+        width: 55%;
+    }
+    footer {
+        width: 70%;
+        clear: both;
+    }
+}
